@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_argo_cd_1684345947107-pr-trigger-input-set
+  identifier: Build_argo_cd_1684345947107prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Vishargotest
+  pipeline:
+    identifier: Build_argo_cd_1684345947107
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
