@@ -6,9 +6,9 @@ pipeline:
   properties:
     ci:
       codebase:
+        connectorRef: argocd
+        repoName: argo-cd
         build: <+input>
-        connectorRef: account.Github_OAuth_1684246355606
-        repoName: Vishnu-Harness/argo-cd
   stages:
     - stage:
         identifier: build
