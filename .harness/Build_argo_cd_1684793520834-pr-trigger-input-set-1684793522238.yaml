@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_argo_cd_1684793520834-pr-trigger-input-set
+  identifier: Build_argo_cd_1684793520834prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: hardik_argo_cd
+  pipeline:
+    identifier: Build_argo_cd_1684793520834
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
