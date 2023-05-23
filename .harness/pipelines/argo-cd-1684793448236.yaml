@@ -23,7 +23,7 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: go build
+                    command: brew install argocd
               - step:
                   identifier: dockerbuild
                   name: docker_build
