@@ -23,7 +23,7 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Sh
-                    command: brew install argocd
+                    command: apt-get install kubectl
               - step:
                   identifier: dockerbuild
                   name: docker_build
