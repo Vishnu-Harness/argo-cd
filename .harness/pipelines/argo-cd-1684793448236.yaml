@@ -18,29 +18,6 @@ pipeline:
           execution:
             steps:
               - step:
-                  type: Run
-                  name: Run_3
-                  identifier: Run_3
-                  spec:
-                    shell: Sh
-                    command: |-
-                      kubectl create namespace argocd
-                      kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-              - step:
-                  identifier: gobuild
-                  name: go_build
-                  spec:
-                    command: go build
-                  timeout: ""
-                  type: Run
-              - step:
-                  identifier: gotest
-                  name: go_test
-                  spec:
-                    command: go test -v ./...
-                  timeout: ""
-                  type: Run
-              - step:
                   identifier: dockerbuild
                   name: docker_build
                   spec:
